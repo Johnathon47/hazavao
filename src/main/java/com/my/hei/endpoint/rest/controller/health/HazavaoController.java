@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HazavaoController {
-  private HazavaoService hazavaoService;
+  private final HazavaoService hazavaoService;
 
   public HazavaoController(HazavaoService hazavaoService) {
     this.hazavaoService = hazavaoService;
