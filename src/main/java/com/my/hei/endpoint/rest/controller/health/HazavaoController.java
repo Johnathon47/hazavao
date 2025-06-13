@@ -15,6 +15,6 @@ public class HazavaoController {
 
   @GetMapping("/hazavao")
   public String hazavao(@RequestParam String teny) {
-    return "rien pour l'instant";
+    return hazavaoService.getDefinition(teny);
   }
 }
